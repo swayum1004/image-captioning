@@ -1,16 +1,19 @@
-🖼️ Image Captioning with Attention and InceptionResNetV2
+🖼️ **Image Captioning with Attention and InceptionResNetV2**
+
 This repository implements an Image Captioning model using deep learning techniques. The model combines the power of transfer learning with a sequence-to-sequence architecture featuring GRU and attention mechanisms to generate descriptive captions for images.
 
-📌 Overview
-Encoder: Uses the pre-trained InceptionResNetV2 model to extract rich visual features from images.
+📌 **Overview**
 
-Decoder: A custom RNN decoder with GRU, attention mechanism, and embedding layers to generate captions based on image features.
+**Encoder**: Uses the pre-trained InceptionResNetV2 model to extract rich visual features from images.
 
-Dataset: Trained on the COCO Captions dataset, which contains a wide range of images paired with human-written captions.
+**Decoder**: A custom RNN decoder with GRU, attention mechanism, and embedding layers to generate captions based on image features.
 
-Goal: Given a new image, the model generates a meaningful and relevant caption.
+**Dataset:** Trained on the COCO Captions dataset, which contains a wide range of images paired with human-written captions.
 
-🧠 Key Features
+**Goal:** Given a new image, the model generates a meaningful and relevant caption.
+
+🧠 **Key Features**
+
 ✅ Transfer Learning with InceptionResNetV2 for efficient image feature extraction.
 
 ✅ Attention Mechanism to dynamically focus on important regions of the image while generating each word.
@@ -21,28 +24,31 @@ Goal: Given a new image, the model generates a meaningful and relevant caption.
 
 ✅ Built using TensorFlow and Keras.
 
-🛠️ Workflow
-Import Libraries: TensorFlow, TensorFlow Datasets, TensorFlow Hub, Matplotlib, etc.
+🛠️ **Workflow**
 
-Set Parameters: Define vocabulary size, embedding dimensions, attention units, etc.
+**Import Libraries:** TensorFlow, TensorFlow Datasets, TensorFlow Hub, Matplotlib, etc.
 
-Load & Preprocess Data: Load COCO dataset, resize/normalize images, tokenize captions with <start> and <end> tokens.
+**Set Parameters:** Define vocabulary size, embedding dimensions, attention units, etc.
 
-Encoder: Extract features using InceptionResNetV2 and pass through a dense layer.
+**Load & Preprocess Data:** Load COCO dataset, resize/normalize images, tokenize captions with <start> and <end> tokens.
 
-Decoder: Generate captions using GRU, attention, and dense layers.
+**Encoder:** Extract features using InceptionResNetV2 and pass through a dense layer.
 
-Training: Optimize the model using SparseCategoricalCrossentropy and AdamW.
+**Decoder:** Generate captions using GRU, attention, and dense layers.
 
-Prediction: Generate captions for input images with a separate inference model.
+**Training:** Optimize the model using SparseCategoricalCrossentropy and AdamW.
+
+**Prediction**: Generate captions for input images with a separate inference model.
 
 
-📁 Dataset
+📁 **Dataset**
+
 COCO Captions: https://cocodataset.org/#captions-2015
 
 Loaded via TensorFlow Datasets or from Google Cloud Storage.
 
-⚙️ Technologies Used
+⚙️ **Technologies Used**
+
 Python
 
 TensorFlow 2.x
